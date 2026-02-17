@@ -1,1 +1,7 @@
-.aider*
+.claude/context/
+.DS_Store
+.notes/
+tmp/
+
+server/
+client/
