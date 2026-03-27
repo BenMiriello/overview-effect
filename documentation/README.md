@@ -13,6 +13,7 @@ The actual physics of lightning as understood from atmospheric science research.
 - **`return-stroke.md`** - The visible flash: return stroke physics and luminosity
 - **`charge-distribution.md`** - Atmospheric charge: cloud structure, induced ground charge, electrostatic induction
 - **`branching-mechanics.md`** - Space leaders, streamer zones, and why lightning branches
+- **`cloud-charge-dynamics.md`** - Cumulonimbus structure, tripole model, charge separation mechanisms
 
 ### `/simulation/` - Mathematical Models
 How we translate physics into computable models.
@@ -21,6 +22,8 @@ How we translate physics into computable models.
 - **`voronoi-field-system.md`** - Smooth scalar fields for atmospheric properties
 - **`multi-leader-competition.md`** - Leader spawning, competition-based death, winner determination
 - **`atmospheric-model.md`** - Ceiling charge, ground charge, and their coupling
+- **`wind-model.md`** - Atmospheric wind profiles, shear, turbulence, and implementation
+- **`rain-model.md`** - Raindrop physics, wind interaction, particle rendering approach
 
 ### `/rendering/` - Visualization Techniques
 How simulation output becomes visible graphics.
@@ -28,6 +31,7 @@ How simulation output becomes visible graphics.
 - **`animation-phases.md`** - Leader stepping, return stroke wave, subsequent strokes, flickering
 - **`line-rendering.md`** - WebGL line width, LineSegments2, depth-based styling
 - **`charge-visualization.md`** - Shader-based field visualization for charge planes
+- **`charge-field-visualization.md`** - Single-plane shader rendering, noise-warped boundaries, metaball merging
 
 ### `/design-decisions/` - Why We Did What We Did
 Key architectural and algorithmic choices with rationale.
@@ -40,8 +44,9 @@ Key architectural and algorithmic choices with rationale.
 ### `/architecture/` - System Overview
 How the pieces fit together.
 
-- **`module-structure.md`** - File organization and module boundaries
-- **`data-flow.md`** - From simulation input to rendered frame
+- **`timeline-worker-system.md`** - Web Worker timeline architecture, adaptive pacing, buffer management, and why strikes must be computed sequentially
+- **`module-structure.md`** - File organization and module boundaries (TODO)
+- **`data-flow.md`** - From simulation input to rendered frame (TODO)
 
 ---
 
@@ -96,4 +101,4 @@ See `notes/bibliography.md` for complete reference list.
 ---
 
 *Documentation created: 2026-02-10*
-*Last updated: 2026-02-10*
+*Last updated: 2026-02-18*

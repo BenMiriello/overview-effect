@@ -260,3 +260,17 @@ The original implementation had:
 - Geometry recreation every frame
 
 The rewrite fixed all of these by embracing pre-computation.
+
+---
+
+## Related: Timeline Worker System
+
+This document covers pre-computing individual bolt geometry before animation. For the broader architecture of running the atmosphere simulation ahead of visual time in a Web Worker, see:
+
+**[`/architecture/timeline-worker-system.md`](../architecture/timeline-worker-system.md)**
+
+That document covers:
+- Web Worker timeline architecture
+- Why strikes must be computed sequentially (causal dependency)
+- Adaptive charge accumulation for buffer management
+- Timing and pacing between worker and main thread
