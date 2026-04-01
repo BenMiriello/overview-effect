@@ -48,6 +48,11 @@ How the pieces fit together.
 - **`module-structure.md`** - File organization and module boundaries (TODO)
 - **`data-flow.md`** - From simulation input to rendered frame (TODO)
 
+### `/globe/` - Globe View
+The real-time globe view: Blitzortung data pipeline, layer system, and strike rendering.
+
+- **`strike-lifecycle.md`** - How strikes are created, animated, disposed, and bounded; performance investigation and hotspot camera positioning (WIP)
+
 ---
 
 ## Quick Reference
