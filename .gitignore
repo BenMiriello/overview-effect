@@ -5,3 +5,9 @@ tmp/
 
 server/
 client/
+
+.ralph/
+.ralphrc
+.claude/
+node_modules/
+**/.DS_Store
